@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+    </style>
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body
+    class="flex flex-col h-screen justify-center gap-2 items-center mx-auto bg-Cream"
+  >
+    <main
+      class="flex md:shadow-lg md:grid grid-cols-2 md:max-w-[600px] flex-col md:flex-row bg-white rounded-2xl"
+    >
+      <picture>
+        <img
+          class="rounded-t-2xl object-contain flex md:hidden"
+          src="images/image-product-mobile.jpg"
+          alt="perfume picture"
+        />
+        <img
+          class="hidden rounded-l-xl md:flex"
+          src="images/image-product-desktop.jpg"
+          alt="perfume image left"
+        />
+      </picture>
+
+      <div
+        class="flex rounded-b-lg bg-white md:rounded-r-xl flex-col p-8 md:pl-8 md:pr-7 gap-3 md:gap-4"
+      >
+        <h2
+          class="font-montserrat text-xs uppercase tracking-[0.3rem] font-semibold text-darkGrayishBlue"
+        >
+          Perfume
+        </h2>
+        <h1
+          class="font-extrabold leading-8 font-fraunces text-3xl text-veryDarkBlue"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="font-montserrat leading-6 text-sm text-darkGrayishBlue">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div
+          class="flex pt-4 items-center gap-5 text-darkCyan font-fraunces font-bold text-3xl"
+        >
+          $149.99
+          <span class="text-darkGrayishBlue line-through font-normal text-base"
+            >$169.99</span
+          >
+        </div>
+        <button
+          class="flex justify-center items-center mt-2 gap-2 text-white font-montserra font-semibold py-3 rounded-lg bg-darkCyan hover:bg-green-950"
+        >
+          <img src="images/icon-cart.svg" alt="cart" />Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <div class="attribution font-montserrat hidden md:block">
+      Challenge by
+      <a
+        class="text-darkCyan hover:underline"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="text-darkCyan hover:underline" href="#">John Pugh</a>.
+    </div>
+  </body>
+</html>
